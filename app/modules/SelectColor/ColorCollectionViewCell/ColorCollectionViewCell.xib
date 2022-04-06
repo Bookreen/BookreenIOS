@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Znr-sN-utG" customClass="ColorCollectionViewCell" customModule="Bookreen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-M3-6SW" customClass="RoundView" customModule="Mobilpos" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ODg-M3-6SW" firstAttribute="bottom" secondItem="Znr-sN-utG" secondAttribute="bottom" id="4Q6-Bg-qtL"/>
+                <constraint firstAttribute="top" secondItem="ODg-M3-6SW" secondAttribute="top" id="YnP-dG-gih"/>
+                <constraint firstItem="ODg-M3-6SW" firstAttribute="trailing" secondItem="Znr-sN-utG" secondAttribute="trailing" id="g9K-sX-Vjm"/>
+                <constraint firstAttribute="leading" secondItem="ODg-M3-6SW" secondAttribute="leading" id="y8R-ia-hET"/>
+            </constraints>
+            <connections>
+                <outlet property="roundView" destination="ODg-M3-6SW" id="7pk-Zs-lL1"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="154"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Department View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DepartmentViewController" id="Y6W-OH-hqX" customClass="DepartmentViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-f0-emB">
+                                <rect key="frame" x="0.0" y="402.5" width="414" height="459.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="rKp-ZX-ZK4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAq-1f-ha2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="358.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahQ-eZ-S9q">
+                                <rect key="frame" x="152" y="342.5" width="110" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="VHg-bT-ISb"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="32" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressedButtonChange:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X0j-hr-bFl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ahQ-eZ-S9q" firstAttribute="centerX" secondItem="cAq-1f-ha2" secondAttribute="centerX" id="JBg-Ea-A2v"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JfE-f0-emB" secondAttribute="trailing" id="L2a-uR-99l"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JfE-f0-emB" secondAttribute="bottom" id="L5s-HH-Km5"/>
+                            <constraint firstItem="cAq-1f-ha2" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="MMl-qZ-sPb"/>
+                            <constraint firstItem="cAq-1f-ha2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ngc-WK-GHI"/>
+                            <constraint firstItem="cAq-1f-ha2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RDK-8j-imW"/>
+                            <constraint firstItem="ahQ-eZ-S9q" firstAttribute="bottom" secondItem="cAq-1f-ha2" secondAttribute="bottom" constant="-12" id="W8I-MU-ips"/>
+                            <constraint firstItem="JfE-f0-emB" firstAttribute="top" secondItem="cAq-1f-ha2" secondAttribute="bottom" id="ZuU-YJ-yW3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cAq-1f-ha2" secondAttribute="trailing" id="kFI-72-PGc"/>
+                            <constraint firstItem="JfE-f0-emB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xoA-1Q-RIT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonChange" destination="ahQ-eZ-S9q" id="D2q-JY-9Qy"/>
+                        <outlet property="collectionView" destination="JfE-f0-emB" id="0lS-rG-sek"/>
+                        <outlet property="webView" destination="cAq-1f-ha2" id="cHN-UO-9wn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-957" y="108"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Tab View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomTabViewController" id="Y6W-OH-hqX" customClass="CustomTabViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-dD-SCF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j35-aN-e4o" customClass="CustomizedTabBar" customModule="Bookreen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="806" width="414" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-bP-Cde">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wA5-kQ-Ehd" customClass="CustomTabItem" customModule="Bookreen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unSelectedColor">
+                                                        <color key="value" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="user"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Uw-g9-AlW" customClass="CustomTabItem" customModule="Bookreen" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="0.0" width="82.5" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="user"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-pT-bMd">
+                                                <rect key="frame" x="165.5" y="0.0" width="83" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqc-6g-mvH" customClass="CustomTabItem" customModule="Bookreen" customModuleProvider="target">
+                                                <rect key="frame" x="248.5" y="0.0" width="82.5" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-C8-UlW" customClass="CustomTabItem" customModule="Bookreen" customModuleProvider="target">
+                                                <rect key="frame" x="331" y="0.0" width="83" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GDw-bP-Cde" secondAttribute="trailing" id="Pgq-uP-fXs"/>
+                                    <constraint firstItem="GDw-bP-Cde" firstAttribute="top" secondItem="j35-aN-e4o" secondAttribute="top" id="gJN-Wp-ROc"/>
+                                    <constraint firstItem="GDw-bP-Cde" firstAttribute="leading" secondItem="j35-aN-e4o" secondAttribute="leading" id="gtM-w8-Hpn"/>
+                                    <constraint firstAttribute="height" constant="56" id="qiR-cM-DvF"/>
+                                    <constraint firstAttribute="bottom" secondItem="GDw-bP-Cde" secondAttribute="bottom" id="zVW-yM-Y7k"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-3m-37D">
+                                <rect key="frame" x="179" y="778" width="56" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="EOQ-d3-r1U">
+                                        <rect key="frame" x="19.5" y="19.5" width="17" height="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0d-Dp-63c">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedButtonAdd:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QXe-nj-bky"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="p0d-Dp-63c" secondAttribute="bottom" id="7FW-48-lwI"/>
+                                    <constraint firstAttribute="width" constant="56" id="KyW-uS-re1"/>
+                                    <constraint firstItem="EOQ-d3-r1U" firstAttribute="width" secondItem="PrD-3m-37D" secondAttribute="width" multiplier="0.3" id="Neq-on-r1D"/>
+                                    <constraint firstAttribute="height" constant="56" id="U3S-Qd-5t9"/>
+                                    <constraint firstItem="p0d-Dp-63c" firstAttribute="leading" secondItem="PrD-3m-37D" secondAttribute="leading" id="cAX-ad-dFS"/>
+                                    <constraint firstItem="EOQ-d3-r1U" firstAttribute="height" secondItem="PrD-3m-37D" secondAttribute="height" multiplier="0.3" id="cMY-0l-PQM"/>
+                                    <constraint firstItem="p0d-Dp-63c" firstAttribute="top" secondItem="PrD-3m-37D" secondAttribute="top" id="g9t-zF-cyI"/>
+                                    <constraint firstAttribute="trailing" secondItem="p0d-Dp-63c" secondAttribute="trailing" id="oZk-Ii-sWp"/>
+                                    <constraint firstItem="EOQ-d3-r1U" firstAttribute="centerY" secondItem="PrD-3m-37D" secondAttribute="centerY" id="rPs-fh-Wkc"/>
+                                    <constraint firstItem="EOQ-d3-r1U" firstAttribute="centerX" secondItem="PrD-3m-37D" secondAttribute="centerX" id="x93-Tt-oWw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBZ-Lc-hlj" userLabel="ViewSafeAre">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PrD-3m-37D" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="12o-D8-FWF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j35-aN-e4o" secondAttribute="trailing" id="CHS-K2-6dV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TUE-dD-SCF" secondAttribute="bottom" constant="60" id="HKE-rb-KcG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TUE-dD-SCF" secondAttribute="trailing" id="M4i-md-NJN"/>
+                            <constraint firstItem="j35-aN-e4o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PKz-pB-Z0C"/>
+                            <constraint firstItem="TUE-dD-SCF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="PcF-Pz-qDL"/>
+                            <constraint firstItem="PrD-3m-37D" firstAttribute="bottom" secondItem="j35-aN-e4o" secondAttribute="bottom" constant="-28" id="Tok-gu-e2G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jBZ-Lc-hlj" secondAttribute="trailing" id="WPB-2b-QUV"/>
+                            <constraint firstItem="jBZ-Lc-hlj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cfI-zS-fxa"/>
+                            <constraint firstItem="j35-aN-e4o" firstAttribute="bottom" secondItem="jBZ-Lc-hlj" secondAttribute="top" id="fAa-3m-7IF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="j35-aN-e4o" secondAttribute="bottom" id="kZz-LP-IJ2"/>
+                            <constraint firstItem="TUE-dD-SCF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qF8-hh-Tn5"/>
+                            <constraint firstAttribute="bottom" secondItem="jBZ-Lc-hlj" secondAttribute="bottom" id="t5t-Ab-rd4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="TUE-dD-SCF" id="qEV-ku-sgF"/>
+                        <outlet property="tabCircle" destination="PrD-3m-37D" id="Yvx-c9-EVD"/>
+                        <outlet property="tabItemCalendar" destination="0Uw-g9-AlW" id="aDC-zo-3cc"/>
+                        <outlet property="tabItemHome" destination="wA5-kQ-Ehd" id="Ofz-4B-RfZ"/>
+                        <outlet property="tabItemPreviewFloor" destination="Gqc-6g-mvH" id="1Em-2b-X4G"/>
+                        <outlet property="tabItemProfile" destination="TcO-C8-UlW" id="IAX-cR-gdx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="448" height="448"/>
+        <image name="user" width="512" height="512.00201416015625"/>
+        <namedColor name="AccentColor">
+            <color red="0.28999999165534973" green="0.078000001609325409" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

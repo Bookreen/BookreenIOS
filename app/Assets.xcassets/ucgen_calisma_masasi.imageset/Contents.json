@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ucgen_calisma_masasi.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

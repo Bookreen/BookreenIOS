@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Persons View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PersonsViewController" id="Y6W-OH-hqX" customClass="PersonsViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-Og-XmB" userLabel="ViewSearch">
+                                <rect key="frame" x="24" y="68" width="366" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgt-fw-Xtk" userLabel="ViewIcon">
+                                        <rect key="frame" x="12" y="7" width="36" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="0gj-Y9-iC9">
+                                                <rect key="frame" x="9" y="9" width="18" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="0gj-Y9-iC9" firstAttribute="height" secondItem="dgt-fw-Xtk" secondAttribute="height" multiplier="0.5" id="2Sm-Lm-iSS"/>
+                                            <constraint firstAttribute="width" constant="36" id="65d-ek-GZz"/>
+                                            <constraint firstItem="0gj-Y9-iC9" firstAttribute="width" secondItem="dgt-fw-Xtk" secondAttribute="width" multiplier="0.5" id="TMI-eE-W29"/>
+                                            <constraint firstItem="0gj-Y9-iC9" firstAttribute="centerX" secondItem="dgt-fw-Xtk" secondAttribute="centerX" id="Vyc-5I-den"/>
+                                            <constraint firstItem="0gj-Y9-iC9" firstAttribute="centerY" secondItem="dgt-fw-Xtk" secondAttribute="centerY" id="ZcY-B9-Yqw"/>
+                                            <constraint firstAttribute="height" constant="36" id="mmM-AV-enw"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-9T-IPW" customClass="InsetTextField" customModule="Bookreen" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="0.0" width="318" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="webSearch" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IiU-eg-hdA"/>
+                                    <constraint firstItem="dgt-fw-Xtk" firstAttribute="leading" secondItem="1ez-Og-XmB" secondAttribute="leading" constant="12" id="LaC-Of-G5a"/>
+                                    <constraint firstItem="dgt-fw-Xtk" firstAttribute="centerY" secondItem="1ez-Og-XmB" secondAttribute="centerY" id="QBF-NJ-b7I"/>
+                                    <constraint firstItem="d0r-9T-IPW" firstAttribute="top" secondItem="1ez-Og-XmB" secondAttribute="top" id="QJM-IF-MOp"/>
+                                    <constraint firstAttribute="trailing" secondItem="d0r-9T-IPW" secondAttribute="trailing" id="kY2-OS-DAW"/>
+                                    <constraint firstAttribute="bottom" secondItem="d0r-9T-IPW" secondAttribute="bottom" id="kib-yx-Y6J"/>
+                                    <constraint firstItem="d0r-9T-IPW" firstAttribute="leading" secondItem="dgt-fw-Xtk" secondAttribute="trailing" id="sB1-Zf-g3H"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-a7-fPu">
+                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HmT-Sr-2oh">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sPQ-a7-fPu" firstAttribute="top" secondItem="1ez-Og-XmB" secondAttribute="bottom" constant="16" id="21q-Yb-X53"/>
+                            <constraint firstItem="1ez-Og-XmB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="DOI-lQ-Ak3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sPQ-a7-fPu" secondAttribute="trailing" id="E3w-13-2na"/>
+                            <constraint firstItem="sPQ-a7-fPu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bLs-wR-FHI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1ez-Og-XmB" secondAttribute="trailing" constant="24" id="jKd-XC-Q6s"/>
+                            <constraint firstItem="1ez-Og-XmB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="zTZ-PZ-BBF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sPQ-a7-fPu" secondAttribute="bottom" id="zlx-nY-Isl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sPQ-a7-fPu" id="uRg-Zg-l3t"/>
+                        <outlet property="textFieldSearch" destination="d0r-9T-IPW" id="dR4-Cd-Wqt"/>
+                        <outlet property="viewSearch" destination="1ez-Og-XmB" id="5ng-pN-4GI"/>
+                        <outlet property="viewSearchIconView" destination="dgt-fw-Xtk" id="ejC-mb-uJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="d0r-9T-IPW">
+            <size key="intrinsicContentSize" width="5" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="search" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

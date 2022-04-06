@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Upload Profile Photo View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeUploadProfilePhotoViewController" id="Y6W-OH-hqX" customClass="WelcomeUploadProfilePhotoViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-iT-nBG">
+                                <rect key="frame" x="143" y="104.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="UCn-3N-4XO"/>
+                                    <constraint firstAttribute="height" constant="128" id="nCv-lV-hdR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWY-TC-B1o">
+                                <rect key="frame" x="152" y="264.5" width="110" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="g4u-IO-cvh"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="32" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressedButtonChoose:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HQS-Lc-4QN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irF-CT-mU5">
+                                <rect key="frame" x="16" y="60" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QWY-TC-B1o" firstAttribute="top" secondItem="0KL-iT-nBG" secondAttribute="bottom" constant="32" id="MqB-t8-USi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="irF-CT-mU5" secondAttribute="trailing" constant="16" id="NPP-EZ-E1C"/>
+                            <constraint firstItem="irF-CT-mU5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="SD8-Zy-uEZ"/>
+                            <constraint firstItem="irF-CT-mU5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="Z0N-MW-jwD"/>
+                            <constraint firstItem="0KL-iT-nBG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="gRQ-ME-xct"/>
+                            <constraint firstItem="QWY-TC-B1o" firstAttribute="centerX" secondItem="0KL-iT-nBG" secondAttribute="centerX" id="h5N-d9-HVd"/>
+                            <constraint firstItem="0KL-iT-nBG" firstAttribute="top" secondItem="irF-CT-mU5" secondAttribute="bottom" constant="24" id="nvv-o8-7bA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonChooseProfilePhoto" destination="QWY-TC-B1o" id="7dR-iv-gvM"/>
+                        <outlet property="imageViewProfilePhoto" destination="0KL-iT-nBG" id="Hxb-I2-MWW"/>
+                        <outlet property="labelTitle" destination="irF-CT-mU5" id="mgV-r4-atF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tekli_calisma_masasi_beyaz.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

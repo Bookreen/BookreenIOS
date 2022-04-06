@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "yuvarlak_masa_beyaz.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

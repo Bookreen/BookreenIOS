@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Space List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SpaceListViewController" id="Y6W-OH-hqX" customClass="SpaceListViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-90-0Fu">
+                                <rect key="frame" x="15" y="59" width="345" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="onTimeTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="YYh-N1-wnS"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_filter_list_black_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="dDA-5j-sOx">
+                                <rect key="frame" x="375" y="62.5" width="24" height="24"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="QWX-qe-Tg7"/>
+                                    <constraint firstAttribute="width" constant="24" id="pmD-Cx-1Ib"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S5w-At-eRX">
+                                <rect key="frame" x="0.0" y="105" width="414" height="757"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RW0-jq-g86">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dDA-5j-sOx" firstAttribute="leading" secondItem="HEc-90-0Fu" secondAttribute="trailing" constant="15" id="9ml-hV-sg0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dDA-5j-sOx" secondAttribute="trailing" constant="15" id="CwN-6K-BVy"/>
+                            <constraint firstItem="HEc-90-0Fu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="FNf-Qq-s1G"/>
+                            <constraint firstItem="HEc-90-0Fu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="Iuu-rS-m11"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="S5w-At-eRX" secondAttribute="bottom" id="PIz-Qc-A20"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S5w-At-eRX" secondAttribute="trailing" id="Xbh-zt-Wv4"/>
+                            <constraint firstItem="S5w-At-eRX" firstAttribute="top" secondItem="HEc-90-0Fu" secondAttribute="bottom" constant="15" id="kxM-aX-rJj"/>
+                            <constraint firstItem="dDA-5j-sOx" firstAttribute="centerY" secondItem="HEc-90-0Fu" secondAttribute="centerY" id="nkb-rf-q0e"/>
+                            <constraint firstItem="S5w-At-eRX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pS3-Ls-aLt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="S5w-At-eRX" id="PXc-1u-hsF"/>
+                        <outlet property="filterButton" destination="dDA-5j-sOx" id="X1v-I7-gxy"/>
+                        <outlet property="timerView" destination="HEc-90-0Fu" id="qGt-hc-1BB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="round_filter_list_black_48pt" width="48" height="48"/>
+        <namedColor name="AccentColor">
+            <color red="0.28999999165534973" green="0.078000001609325409" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

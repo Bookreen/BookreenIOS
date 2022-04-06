@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="rYv-O1-4rN">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="JK3-Al-2fo" customClass="SplashViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZW-yj-kcG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookreenLight" translatesAutoresizingMaskIntoConstraints="NO" id="dzQ-9Z-Tvw">
+                                <rect key="frame" x="48" y="408.5" width="318" height="79.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dzQ-9Z-Tvw" secondAttribute="height" multiplier="8:2" id="QtD-3H-BfZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ezI-lv-2n1"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.078431372550000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dzQ-9Z-Tvw" secondAttribute="trailing" constant="48" id="5Fw-f7-Q1m"/>
+                            <constraint firstItem="dzQ-9Z-Tvw" firstAttribute="leading" secondItem="oZW-yj-kcG" secondAttribute="leading" constant="48" id="Z4T-F4-fTy"/>
+                            <constraint firstItem="dzQ-9Z-Tvw" firstAttribute="centerY" secondItem="oZW-yj-kcG" secondAttribute="centerY" id="lN7-P0-q35"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dzQ-9Z-Tvw" id="B04-Et-QyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juG-e6-m8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookreenLight" width="192" height="41"/>
+    </resources>
+</document>

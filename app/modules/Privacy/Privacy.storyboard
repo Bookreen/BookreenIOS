@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Privacy View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyViewController" id="Y6W-OH-hqX" customClass="PrivacyViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="CustomGradientView" customModule="Bookreen" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookreenLight" translatesAutoresizingMaskIntoConstraints="NO" id="xde-1P-lSm">
+                                <rect key="frame" x="83" y="92" width="248" height="41"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We value your privacy and data security" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-bp-6q8">
+                                <rect key="frame" x="24" y="157" width="366" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Bookreen Privacy Policy explains how  Bookreen collects, uses and shares your personald data." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-gX-WF5">
+                                <rect key="frame" x="24" y="236" width="366" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0G-lT-3Ad">
+                                <rect key="frame" x="24" y="314" width="366" height="87.5"/>
+                                <string key="text">In addition to this Privacy Policy, we provide data and privacy information that requests to use your personal information in our products and certain features.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUQ-9M-a67">
+                                <rect key="frame" x="53.5" y="425.5" width="307" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read and accept our Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3F-Z8-Cxa">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="22"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Af3-VD-Wca">
+                                        <rect key="frame" x="0.0" y="22" width="307" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ayU-zt-e5I"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Yf-TtW">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="23"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="pressedButtonOpenBrowser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xsz-Cc-iFi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Af3-VD-Wca" firstAttribute="trailing" secondItem="U3F-Z8-Cxa" secondAttribute="trailing" id="ApU-Ja-VrU"/>
+                                    <constraint firstItem="U3F-Z8-Cxa" firstAttribute="top" secondItem="yUQ-9M-a67" secondAttribute="top" id="CkL-Mu-BMb"/>
+                                    <constraint firstItem="Af3-VD-Wca" firstAttribute="leading" secondItem="U3F-Z8-Cxa" secondAttribute="leading" id="PvD-Gd-I0K"/>
+                                    <constraint firstItem="Yax-Yf-TtW" firstAttribute="top" secondItem="yUQ-9M-a67" secondAttribute="top" id="ds4-x3-EQQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yax-Yf-TtW" secondAttribute="trailing" id="gcn-LK-m1Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yax-Yf-TtW" secondAttribute="bottom" id="hag-xw-rrj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Af3-VD-Wca" secondAttribute="bottom" id="iuT-g2-Y7u"/>
+                                    <constraint firstAttribute="trailing" secondItem="U3F-Z8-Cxa" secondAttribute="trailing" id="jDd-qz-n3X"/>
+                                    <constraint firstItem="Af3-VD-Wca" firstAttribute="top" secondItem="U3F-Z8-Cxa" secondAttribute="bottom" id="qi6-K1-Ehz"/>
+                                    <constraint firstItem="U3F-Z8-Cxa" firstAttribute="leading" secondItem="yUQ-9M-a67" secondAttribute="leading" id="uk6-aa-riy"/>
+                                    <constraint firstItem="Yax-Yf-TtW" firstAttribute="leading" secondItem="yUQ-9M-a67" secondAttribute="leading" id="ykS-KL-x3a"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDJ-3t-Q4p">
+                                <rect key="frame" x="103.5" y="527.5" width="207" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="yEc-7E-hPP"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedButtonSubmit:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="f2g-hS-9nM"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FMf-n3-rjF">
+                                <rect key="frame" x="24" y="472.5" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjB-2w-9pn">
+                                <rect key="frame" x="81" y="478.5" width="309" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yUQ-9M-a67" firstAttribute="centerX" secondItem="g0G-lT-3Ad" secondAttribute="centerX" id="2YU-rg-mHa"/>
+                            <constraint firstItem="xde-1P-lSm" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.6" id="2nR-Xp-bew"/>
+                            <constraint firstItem="rbd-gX-WF5" firstAttribute="top" secondItem="kCV-bp-6q8" secondAttribute="bottom" constant="24" id="5RK-1a-f31"/>
+                            <constraint firstItem="zDJ-3t-Q4p" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="FFY-fY-syq"/>
+                            <constraint firstItem="g0G-lT-3Ad" firstAttribute="leading" secondItem="rbd-gX-WF5" secondAttribute="leading" id="Fcn-S4-mw5"/>
+                            <constraint firstItem="FMf-n3-rjF" firstAttribute="leading" secondItem="g0G-lT-3Ad" secondAttribute="leading" id="Hwe-Zh-MQr"/>
+                            <constraint firstItem="kCV-bp-6q8" firstAttribute="top" secondItem="xde-1P-lSm" secondAttribute="bottom" constant="24" id="M80-5C-Lsy"/>
+                            <constraint firstItem="kCV-bp-6q8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="OEg-9X-A8Z"/>
+                            <constraint firstItem="xde-1P-lSm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="Wyw-5f-OEI"/>
+                            <constraint firstItem="yUQ-9M-a67" firstAttribute="top" secondItem="g0G-lT-3Ad" secondAttribute="bottom" constant="24" id="XUK-Ng-wmb"/>
+                            <constraint firstItem="rbd-gX-WF5" firstAttribute="trailing" secondItem="kCV-bp-6q8" secondAttribute="trailing" id="ZMP-FN-lB6"/>
+                            <constraint firstItem="g0G-lT-3Ad" firstAttribute="trailing" secondItem="rbd-gX-WF5" secondAttribute="trailing" id="aJm-PO-loI"/>
+                            <constraint firstItem="rbd-gX-WF5" firstAttribute="leading" secondItem="kCV-bp-6q8" secondAttribute="leading" id="bxM-ua-D1B"/>
+                            <constraint firstItem="yjB-2w-9pn" firstAttribute="leading" secondItem="FMf-n3-rjF" secondAttribute="trailing" constant="8" id="cLJ-V5-12o"/>
+                            <constraint firstItem="FMf-n3-rjF" firstAttribute="top" secondItem="yUQ-9M-a67" secondAttribute="bottom" constant="24" id="dVb-Bu-YMG"/>
+                            <constraint firstItem="xde-1P-lSm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="e7Q-mK-qZt"/>
+                            <constraint firstItem="yjB-2w-9pn" firstAttribute="trailing" secondItem="g0G-lT-3Ad" secondAttribute="trailing" id="hyx-7H-MIk"/>
+                            <constraint firstItem="zDJ-3t-Q4p" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="mHx-wV-KKP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kCV-bp-6q8" secondAttribute="trailing" constant="24" id="mzw-XA-aif"/>
+                            <constraint firstItem="zDJ-3t-Q4p" firstAttribute="top" secondItem="FMf-n3-rjF" secondAttribute="bottom" constant="24" id="nwT-Qh-a3i"/>
+                            <constraint firstItem="g0G-lT-3Ad" firstAttribute="top" secondItem="rbd-gX-WF5" secondAttribute="bottom" constant="12" id="spF-gc-hDM"/>
+                            <constraint firstItem="yjB-2w-9pn" firstAttribute="centerY" secondItem="FMf-n3-rjF" secondAttribute="centerY" id="wGp-do-IQz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.80784313725490198" green="0.57647058823529407" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.29019607843137252" green="0.078431372549019607" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSubmit" destination="zDJ-3t-Q4p" id="9v5-ih-4qX"/>
+                        <outlet property="labelDescription1" destination="rbd-gX-WF5" id="fQH-7G-jjR"/>
+                        <outlet property="labelDescription2" destination="g0G-lT-3Ad" id="dZh-Bh-KcX"/>
+                        <outlet property="labelReadAndAcceptPrivacyPolicy" destination="U3F-Z8-Cxa" id="KBQ-jm-uWK"/>
+                        <outlet property="labelSwitchReadAndAcceptPrivacyPolicy" destination="yjB-2w-9pn" id="YkQ-7y-kBS"/>
+                        <outlet property="labelTitle" destination="kCV-bp-6q8" id="hiz-Md-UCM"/>
+                        <outlet property="switchPrivacyPolicy" destination="FMf-n3-rjF" id="AXz-LG-5EH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookreenLight" width="192" height="41"/>
+    </resources>
+</document>

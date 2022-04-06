@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Qr Code Scanner View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="QrCodeScannerViewController" id="Y6W-OH-hqX" customClass="QrCodeScannerViewController" customModule="Bookreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-wp-nMM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-Nj-7Nr">
+                                <rect key="frame" x="186" y="805" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVk-qy-NHY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiB-Sr-1gB" customClass="ImageButtonView" customModule="Bookreen" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="3" width="42" height="42"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="YQE-me-qnr"/>
+                                            <constraint firstAttribute="height" constant="42" id="yZf-dd-pyV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="iconTintColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="round_cancel_black_48pt"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookreenLight" translatesAutoresizingMaskIntoConstraints="NO" id="abN-rr-c18">
+                                        <rect key="frame" x="143" y="8" width="128" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="abN-rr-c18" secondAttribute="height" multiplier="12:3" id="Okt-bd-UV1"/>
+                                            <constraint firstAttribute="height" constant="32" id="e6a-3S-fO0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iiB-Sr-1gB" firstAttribute="leading" secondItem="RVk-qy-NHY" secondAttribute="leading" constant="4" id="1UE-dm-5cq"/>
+                                    <constraint firstItem="abN-rr-c18" firstAttribute="centerX" secondItem="RVk-qy-NHY" secondAttribute="centerX" id="4Cx-cK-NXT"/>
+                                    <constraint firstItem="abN-rr-c18" firstAttribute="centerY" secondItem="RVk-qy-NHY" secondAttribute="centerY" id="f82-wo-ZsT"/>
+                                    <constraint firstItem="iiB-Sr-1gB" firstAttribute="centerY" secondItem="RVk-qy-NHY" secondAttribute="centerY" id="oKv-rO-Lil"/>
+                                    <constraint firstAttribute="height" constant="48" id="tPv-f5-26g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RVk-qy-NHY" secondAttribute="trailing" id="0Vg-0t-eE3"/>
+                            <constraint firstItem="RVk-qy-NHY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0o4-T8-fcr"/>
+                            <constraint firstItem="RVk-qy-NHY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="36n-d8-8ej"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hCZ-wp-nMM" secondAttribute="trailing" id="6gz-vO-TC8"/>
+                            <constraint firstAttribute="bottom" secondItem="hCZ-wp-nMM" secondAttribute="bottom" id="Ec4-oF-jbK"/>
+                            <constraint firstItem="hCZ-wp-nMM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QGE-tB-uH3"/>
+                            <constraint firstItem="Cdb-Nj-7Nr" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="eYx-x2-P3z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cdb-Nj-7Nr" secondAttribute="bottom" constant="36" id="jmX-gS-WKg"/>
+                            <constraint firstItem="hCZ-wp-nMM" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nnb-RW-XuA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDismiss" destination="iiB-Sr-1gB" id="v43-D1-jsF"/>
+                        <outlet property="cameraView" destination="hCZ-wp-nMM" id="iN0-h2-7FQ"/>
+                        <outlet property="labelDescription" destination="Cdb-Nj-7Nr" id="4HX-jN-i40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookreenLight" width="192" height="41"/>
+        <image name="round_cancel_black_48pt" width="48" height="48"/>
+    </resources>
+</document>
