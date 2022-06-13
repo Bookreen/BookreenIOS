@@ -20,7 +20,6 @@ final class NewOfficeReservationViewController: AppViewController {
     @IBOutlet weak var endTimePicker: UIDatePicker!
     @IBOutlet weak var endTimeLabel: UILabel!
     @IBOutlet weak var endTimeView: UIView!
-    @IBOutlet weak var hourContentView: UIView!
     @IBOutlet weak var viewHour: UIView!
     @IBOutlet weak var labelMorning: UILabel!
     @IBOutlet weak var labelAfternoon: UILabel!
@@ -136,7 +135,8 @@ final class NewOfficeReservationViewController: AppViewController {
         self.switchMorning.isOn=viewModel.timeRangeType == .morning
         switchAllDay.isOn = viewModel.timeRangeType == .allDay
         switchAfternoon.isOn = viewModel.timeRangeType == .afternoon
-        hourContentView.alpha = viewModel.timeRangeType == .none ? 1 : 0.45
+        viewHour.alpha = viewModel.timeRangeType == .none ? 1 : 0.45
+        endTimeView.alpha = viewModel.timeRangeType == .none ? 1 : 0.45
         viewHour.isUserInteractionEnabled = viewModel.timeRangeType == .none
         endTimeView.isUserInteractionEnabled = viewModel.timeRangeType == .none
         toggleRestDay()
@@ -311,10 +311,10 @@ final class NewOfficeReservationViewController: AppViewController {
         self.switchAfternoon.isOn = timeRangeType == .afternoon
         
         let notAllDay = timeRangeType != .allDay
-        self.hourContentView.isUserInteractionEnabled = notAllDay
+        self.viewHour.isUserInteractionEnabled = notAllDay
         self.switchMorning.isUserInteractionEnabled = notAllDay
         self.switchAfternoon.isUserInteractionEnabled = notAllDay
-        self.hourContentView.alpha = !notAllDay ? 0.45 : 1
+        self.viewHour.alpha = !notAllDay ? 0.45 : 1
         
         updateTimeViewsState()
         

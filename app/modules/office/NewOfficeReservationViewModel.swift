@@ -148,11 +148,17 @@ final class NewOfficeReservationViewModel: NewOfficeReservationViewModelProtocol
         let year = calendar.component(.year, from: _date)
         
         self.date = DateFieldModel(day: day < 10 ? "0\(day)" : "\(day)", month: month < 10 ? "0\(month)" : "\(month)", year: "\(year)")
-        let splits=SessionManager.shared.workStartTime.split(separator: ":")
+        var splits=SessionManager.shared.workStartTime.split(separator: ":")
         if splits.count>1{
             self.hour=HourFieldModel(hour: String(splits[0]), minute: String(splits[1]))
         }else{
             self.hour = HourFieldModel(hour: "07", minute: "00")
+        }
+        splits=SessionManager.shared.workEndTime.split(separator: ":")
+        if splits.count>1{
+            self.endHour=HourFieldModel(hour: String(splits[0]), minute: String(splits[1]))
+        }else{
+            self.endHour=HourFieldModel(hour: "18", minute: "00")
         }
         self.timeRangeType = .allDay
         
